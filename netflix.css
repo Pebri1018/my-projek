@@ -1,0 +1,166 @@
+#background {
+    position: absolute; /* Biar elemen ini jadi latar belakang */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Lebar penuh viewport */
+    height: 100vh; /* Tinggi penuh viewport */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs');
+    background-size: cover; /* Biar gambar memenuhi area */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    z-index: -1; /* Supaya jadi di belakang elemen lain */
+    opacity: 85%;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px; /* Sesuaikan ukuran */
+    color: #E50914; /* Warna merah khas Netflix */
+    text-transform: uppercase; /* Huruf besar semua */
+    letter-spacing: 2px; /* Spasi antar huruf */
+    padding-left: 150px;
+}
+
+section{
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container{
+    background-color: rgba(0, 0, 0, 0.7); /* Background hitam transparan */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Shadow biar 3D */
+
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+form input{
+    width: 100%;
+    padding: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 5px 0 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+form button{
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #e50914; /* Warna merah Netflix */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}   
+
+form button:hover {
+    background-color: #f40612; /* Warna hover */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.opsi{
+    text-align: center;
+    color: white;
+}
+
+.kode{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.kode:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.lupa-sandi:hover{
+    text-decoration: underline;
+}
+
+#centang{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#daftar{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#daftar a:hover{
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+}
+
+form input:invalid {
+    border: 1px solid #e50914;
+}
+
+@media (max-width: 767px) {
+    .form-container {
+        width: 70%;
+        padding: 15px;
+        margin-top: 50px;
+
+    }
+
+    .logo {
+        padding-left: 10px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form-container {
+        width: 60%;
+        height: 400px;
+        margin-top: 50px;
+        padding: 15px;
+
+    }
+
+    .logo {
+        padding-left: 10px;
+        margin-top: 0;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
